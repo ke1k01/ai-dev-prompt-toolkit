@@ -1,0 +1,76 @@
+{
+  "name": "ai-dev-prompt-toolkit",
+  "version": "1.0.0",
+  "product_name": "AI Developer's Prompt Toolkit",
+  "tagline": "Battle-tested prompts for AI coding assistants",
+  "status": "launch_ready",
+  "launch_date": null,
+  "pricing": {
+    "original_price": 59,
+    "launch_price": 29,
+    "currency": "USD",
+    "discount_code": "PHLAUNCH50",
+    "discount_percent": 50
+  },
+  "files": {
+    "prompts": {
+      "count": 8,
+      "files": [
+        "prompts/code_generation.md",
+        "prompts/debugging.md",
+        "prompts/architecture.md",
+        "prompts/automation.md",
+        "prompts/business.md",
+        "prompts/python.md",
+        "prompts/javascript.md",
+        "prompts/rust.md"
+      ],
+      "json_export": "prompts/toolkit.json"
+    },
+    "templates": {
+      "count": 5,
+      "files": [
+        "templates/pr-template.md",
+        "templates/commit-template.md",
+        "templates/tech-spec-template.md",
+        "templates/postmortem-template.md",
+        "templates/oncall-template.md"
+      ]
+    },
+    "launch_assets": {
+      "files": [
+        "launch/landing-page.html",
+        "launch/product-hunt.md",
+        "launch/gumroad-listing.md",
+        "launch/twitter-thread.md"
+      ]
+    },
+    "documentation": [
+      "README.md"
+    ]
+  },
+  "stats": {
+    "total_prompts": 100,
+    "categories": 6,
+    "bonus_templates": 5,
+    "formats": ["markdown", "json", "notion"]
+  },
+  "checklist": {
+    "product_created": true,
+    "prompts_written": true,
+    "templates_created": true,
+    "json_export_created": true,
+    "landing_page_created": true,
+    "product_hunt_kit_created": true,
+    "gumroad_listing_created": true,
+    "twitter_content_created": true,
+    "ready_for_launch": true
+  },
+  "next_steps": [
+    "Set up Gumroad product page",
+    "Create gallery images for Product Hunt",
+    "Build email list of supporters",
+    "Schedule launch date",
+    "Post in relevant communities 1 week before"
+  ]
+}

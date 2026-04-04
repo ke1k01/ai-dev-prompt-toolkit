@@ -1,0 +1,161 @@
+{
+  "name": "AI Developer's Prompt Toolkit",
+  "version": "1.0.0",
+  "description": "Battle-tested prompts for AI coding assistants",
+  "total_prompts": 100,
+  "categories": {
+    "code_generation": {
+      "display_name": "Code Generation",
+      "prompt_count": 10,
+      "prompts": [
+        {
+          "id": "cg-001",
+          "name": "Production-Ready Feature Implementation",
+          "description": "Generate clean, maintainable code with proper structure",
+          "template": "You are a senior software engineer. Implement [FEATURE] for a [LANGUAGE] application using [FRAMEWORK].\n\nRequirements:\n- Write clean, maintainable code following [LANGUAGE] best practices\n- Include comprehensive error handling\n- Add inline comments for complex logic\n- Follow SOLID principles where applicable\n\nContext:\n- Project type: [WEB APP / API / CLI / LIBRARY]\n- Current architecture: [DESCRIPTION]\n- Dependencies: [LIST]\n\nOutput:\n1. Complete implementation code\n2. Brief explanation of design decisions\n3. Any assumptions made\n4. Suggested tests to write"
+        },
+        {
+          "id": "cg-002",
+          "name": "Bug Fix with Root Cause Analysis",
+          "description": "Find and fix bugs with thorough analysis",
+          "template": "Find and fix the bug in this code.\n\nCode:\n```\n[PASTE CODE]\n```\n\nError/Behavior:\n[DESCRIBE THE BUG]\n\nAnalyze:\n1. What is the root cause?\n2. Why does it happen?\n3. What's the fix?\n4. How can we prevent similar bugs?\n\nProvide the corrected code with comments explaining the fix."
+        },
+        {
+          "id": "cg-003",
+          "name": "Refactoring Legacy Code",
+          "description": "Modernize legacy code following current standards",
+          "template": "Refactor this legacy code to modern [LANGUAGE] standards.\n\nOriginal code:\n```\n[PASTE CODE]\n```\n\nGoals:\n- Improve readability\n- Reduce complexity (target cyclomatic complexity < 10)\n- Apply modern patterns ([YEAR] best practices)\n- Maintain existing behavior\n- Add type hints (if applicable)\n\nOutput:\n1. Refactored code\n2. Summary of changes\n3. Before/after complexity metrics\n4. Migration notes if breaking changes"
+        },
+        {
+          "id": "cg-004",
+          "name": "API Endpoint Implementation",
+          "description": "Create REST API endpoints with full stack",
+          "template": "Create a REST API endpoint for [RESOURCE] with the following operations: [OPERATIONS].\n\nFramework: [EXPRESS / FASTAPI / DJANGO / SPRING / ETC]\nAuthentication: [NONE / JWT / API_KEY / OAUTH]\nDatabase: [POSTGRESQL / MONGODB / ETC]\n\nRequirements:\n- Input validation with detailed error messages\n- Proper HTTP status codes\n- Pagination for list endpoints\n- Rate limiting consideration\n- OpenAPI/Swagger documentation\n\nOutput complete implementation including:\n1. Route handler\n2. Data models/schemas\n3. Validation logic\n4. Example requests/responses"
+        },
+        {
+          "id": "cg-005",
+          "name": "Database Query Optimization",
+          "description": "Optimize slow database queries",
+          "template": "Optimize this database query for better performance.\n\nCurrent query:\n```\n[PASTE QUERY]\n```\n\nDatabase: [POSTGRESQL / MYSQL / MONGODB / ETC]\nTable sizes: [ESTIMATES]\nCurrent execution time: [TIME]\n\nAnalyze:\n1. Identify performance bottlenecks\n2. Suggest index improvements\n3. Rewrite query if needed\n4. Estimate performance improvement\n\nOutput:\n- Optimized query\n- Index creation statements\n- Explanation of improvements\n- Expected performance gain"
+        }
+      ]
+    },
+    "debugging": {
+      "display_name": "Debugging",
+      "prompt_count": 5,
+      "prompts": [
+        {
+          "id": "db-001",
+          "name": "Systematic Bug Investigation",
+          "description": "Methodical approach to finding elusive bugs",
+          "template": "Help me debug this issue systematically.\n\n**Symptoms:**\n[WHAT'S HAPPENING]\n\n**Expected Behavior:**\n[WHAT SHOULD HAPPEN]\n\n**Context:**\n- Language: [LANGUAGE]\n- Framework: [FRAMEWORK]\n- Environment: [LOCAL / STAGING / PRODUCTION]\n\nWalk me through:\n1. Initial hypothesis formation\n2. Data to collect\n3. Isolation strategies\n4. Root cause identification\n5. Fix verification\n\nFor each step, explain what to check and why."
+        },
+        {
+          "id": "db-002",
+          "name": "Performance Debugging",
+          "description": "Find and fix performance bottlenecks",
+          "template": "Diagnose performance issues in this code.\n\n```\n[PASTE CODE]\n```\n\n**Performance Problem:**\n- Slow operation: [DESCRIPTION]\n- Current time: [MEASUREMENT]\n- Expected time: [TARGET]\n\nAnalyze:\n1. Time complexity analysis\n2. Memory allocation patterns\n3. I/O operations\n4. Algorithmic inefficiencies\n5. Caching opportunities\n\nProvide:\n- Detailed analysis\n- Specific optimization recommendations\n- Refactored code for critical sections\n- Performance testing approach"
+        }
+      ]
+    },
+    "architecture": {
+      "display_name": "Architecture & Design",
+      "prompt_count": 15,
+      "prompts": [
+        {
+          "id": "ar-001",
+          "name": "System Design from Requirements",
+          "description": "Design scalable systems from scratch",
+          "template": "Design a system for the following requirements:\n\n**Functional Requirements:**\n[LIST CORE FEATURES]\n\n**Non-Functional Requirements:**\n- Expected users: [NUMBER]\n- Requests per second: [NUMBER]\n- Data volume: [SIZE]\n- Availability target: [99.X%]\n\n**Constraints:**\n[BUDGET / TEAM SIZE / TIMELINE]\n\nProvide:\n1. High-level architecture diagram (describe)\n2. Technology stack with rationale\n3. Database schema design\n4. API design overview\n5. Scaling strategy\n6. Failure modes and mitigation\n7. Security considerations\n8. Estimated costs"
+        },
+        {
+          "id": "ar-002",
+          "name": "API Design Review",
+          "description": "Review and improve API design",
+          "template": "Review this API design for best practices:\n\n```\n[PASTE API SPECS / ENDPOINTS]\n```\n\nEvaluate on:\n1. RESTful compliance\n2. Consistency\n3. Error handling\n4. Pagination approach\n5. Authentication/Authorization\n6. Versioning strategy\n7. Documentation clarity\n8. Developer experience\n\nSuggest improvements with examples."
+        }
+      ]
+    },
+    "testing": {
+      "display_name": "Testing",
+      "prompt_count": 10,
+      "prompts": [
+        {
+          "id": "ts-001",
+          "name": "Comprehensive Test Generation",
+          "description": "Generate thorough test suites",
+          "template": "Generate comprehensive tests for this code:\n\n```\n[PASTE CODE]\n```\n\nTesting framework: [JEST / PYTEST / JUNIT / GO_TEST / ETC]\n\nGenerate:\n1. Unit tests for each function/method (aim for 90%+ coverage)\n2. Edge case tests\n3. Error handling tests\n4. Integration test outline\n5. Mock data suggestions\n\nFormat tests following the framework's best practices with:\n- Descriptive test names\n- Arrange-Act-Assert pattern\n- Clear assertions with messages"
+        }
+      ]
+    },
+    "documentation": {
+      "display_name": "Documentation",
+      "prompt_count": 10,
+      "prompts": [
+        {
+          "id": "dc-001",
+          "name": "Documentation Generation",
+          "description": "Auto-generate comprehensive documentation",
+          "template": "Generate documentation for this code:\n\n```\n[PASTE CODE]\n```\n\nGenerate:\n1. Module/file-level docstring explaining purpose\n2. Function/method docstrings with:\n   - Brief description\n   - Parameters (type, description)\n   - Return value (type, description)\n   - Exceptions raised\n   - Example usage\n3. Type annotations if missing\n4. README section if this is a library\n\nFormat: [GOOGLE STYLE / NUMPY STYLE / JAVADOC / ETC]"
+        }
+      ]
+    },
+    "python": {
+      "display_name": "Python-Specific",
+      "prompt_count": 10,
+      "prompts": [
+        {
+          "id": "py-001",
+          "name": "FastAPI Full Stack",
+          "description": "Complete FastAPI endpoint implementation",
+          "template": "Create a production-ready FastAPI endpoint for [RESOURCE].\n\nRequirements:\n- CRUD operations\n- Pydantic models for validation\n- SQLAlchemy ORM models\n- Async database operations\n- JWT authentication\n- Error handling with custom exceptions\n- OpenAPI documentation\n- Unit tests with pytest\n\nDatabase: PostgreSQL\nAuth: JWT with refresh tokens\n\nInclude:\n1. models.py - SQLAlchemy models\n2. schemas.py - Pydantic schemas\n3. routes.py - FastAPI router\n4. services.py - Business logic\n5. tests.py - Test cases\n\nFollow Python 3.11+ best practices with type hints."
+        },
+        {
+          "id": "py-002",
+          "name": "Django Model + API + Admin",
+          "description": "Complete Django implementation",
+          "template": "Create a complete Django implementation for [MODEL NAME]:\n\nFields:\n[LIST FIELDS WITH TYPES]\n\nRequirements:\n- Django model with proper relationships\n- Django REST Framework serializer\n- ViewSet with permissions\n- Admin interface customization\n- Model validation\n- Database optimization (select_related, prefetch_related)\n- Custom management command\n- Unit tests\n\nInclude migrations and example usage."
+        }
+      ]
+    },
+    "javascript": {
+      "display_name": "JavaScript/TypeScript",
+      "prompt_count": 10,
+      "prompts": [
+        {
+          "id": "js-001",
+          "name": "React Component with Tests",
+          "description": "Production React component with full testing",
+          "template": "Create a React component for [PURPOSE]:\n\nRequirements:\n- TypeScript with proper types\n- React hooks (no class components)\n- Styled-components or Tailwind CSS\n- Loading and error states\n- Accessibility (ARIA labels)\n- Responsive design\n- Unit tests with React Testing Library\n- Integration test example\n- Storybook story\n\nInclude:\n1. Component implementation\n2. Types/interfaces\n3. Styles\n4. Tests\n5. Usage examples"
+        }
+      ]
+    }
+  },
+  "templates": [
+    {
+      "id": "tpl-001",
+      "name": "Pull Request Description",
+      "file": "pr-template.md"
+    },
+    {
+      "id": "tpl-002",
+      "name": "Commit Message",
+      "file": "commit-template.md"
+    },
+    {
+      "id": "tpl-003",
+      "name": "Technical Specification",
+      "file": "tech-spec-template.md"
+    },
+    {
+      "id": "tpl-004",
+      "name": "Incident Postmortem",
+      "file": "postmortem-template.md"
+    },
+    {
+      "id": "tpl-005",
+      "name": "On-Call Runbook",
+      "file": "oncall-template.md"
+    }
+  ]
+}
