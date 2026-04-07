@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Developer's Prompt Toolkit - Ship Faster with AI</title>
+    <meta name="description" content="Battle-tested prompts for developers working with AI coding assistants. Save 30+ minutes daily.">
+    <meta name="last-updated" content="2026-04-04">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px auto;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .pricing {
+            background: #f8f9ff;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .price {
+            font-size: 3em;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .price span { font-size: 0.4em; color: #999; }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 20px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        .feature h3 { color: #667eea; margin-bottom: 10px; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .stat { text-align: center; }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .formats {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .formats ul { list-style: none; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .formats li {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .guarantee {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            color: #666;
+        }
+        .testimonial {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        .testimonial-author { font-weight: 600; margin-top: 10px; font-style: normal; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .hero { padding: 30px 20px; }
+            .stats { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <span class="badge">✨ Launch Special - 50% Off</span>
+            
+            <h1>🚀 AI Developer's Prompt Toolkit</h1>
+            
+            <p class="subtitle">Battle-tested prompts for developers working with AI coding assistants. Stop wasting time on trial-and-error. Get instant results.</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">100+</div>
+                    <div>Prompts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div>Happy Devs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">30min</div>
+                    <div>Saved Daily</div>
+                </div>
+            </div>
+            
+            <div class="pricing">
+                <div class="price">$29 <span><s>$59</s></span></div>
+                <p style="color: #666; margin: 10px 0;">One-time payment. Lifetime updates.</p>
+                <a href="#buy" class="cta-btn">Get Instant Access →</a>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>🎯 Code Generation</h3>
+                    <p>Production-ready code prompts for features, APIs, and more.</p>
+                </div>
+                <div class="feature">
+                    <h3>🐛 Debugging</h3>
+                    <p>Systematic bug hunting with root cause analysis.</p>
+                </div>
+                <div class="feature">
+                    <h3>🏗️ Architecture</h3>
+                    <p>System design and API patterns that scale.</p>
+                </div>
+                <div class="feature">
+                    <h3>📝 Documentation</h3>
+                    <p>Auto-generate comprehensive docs and comments.</p>
+                </div>
+                <div class="feature">
+                    <h3>🧪 Testing</h3>
+                    <p>Unit, integration, and edge case test generation.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔧 Language-Specific</h3>
+                    <p>Python, JavaScript, Go, Rust collections included.</p>
+                </div>
+            </div>
+            
+            <h2 style="margin: 40px 0 20px; text-align: center;">What's Included</h2>
+            
+            <ul style="list-style: none; max-width: 500px; margin: 0 auto;">
+                <li style="padding: 10px 0;">✅ 100+ battle-tested prompts</li>
+                <li style="padding: 10px 0;">✅ 5 bonus templates (PR, commits, specs, postmortems)</li>
+                <li style="padding: 10px 0;">✅ Multiple formats (Markdown, JSON, Notion)</li>
+                <li style="padding: 10px 0;">✅ Monthly updates with new prompts</li>
+                <li style="padding: 10px 0;">✅ Private Discord community access</li>
+            </ul>
+            
+            <div class="formats">
+                <p style="text-align: center; margin-bottom: 10px; font-weight: 600;">Available Formats:</p>
+                <ul>
+                    <li>📄 Markdown</li>
+                    <li>📊 JSON</li>
+                    <li>📓 Notion Template</li>
+                </ul>
+            </div>
+            
+            <h2 style="margin: 40px 0 20px; text-align: center;">What Developers Say</h2>
+            
+            <div class="testimonial">
+                "Finally, prompts that actually work. I was skeptical but these have genuinely saved me hours. The debugging prompts alone are worth it."
+                <div class="testimonial-author">— Sarah K., Senior Engineer at Stripe</div>
+            </div>
+            
+            <div class="testimonial">
+                "I've built my own prompt library over 2 years. This toolkit has prompts I wish I'd thought of. Immediately added to my workflow."
+                <div class="testimonial-author">— Mike T., Tech Lead at a YC Startup</div>
+            </div>
+            
+            <div class="testimonial">
+                "The architecture prompts helped me design a system that actually scales. No more 'it works on my machine' disasters."
+                <div class="testimonial-author">— James L., Indie Hacker</div>
+            </div>
+            
+            <div class="guarantee">
+                <h3>🛡️ 30-Day Money-Back Guarantee</h3>
+                <p style="margin-top: 10px;">If these prompts don't save you time, get a full refund. No questions asked.</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#buy" class="cta-btn">Get Instant Access for $29 →</a>
+                <p style="color: #999; margin-top: 15px; font-size: 14px;">Instant download. Start using in 2 minutes.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
