@@ -16,12 +16,6 @@ fi
 # Create or update the CNAME file for custom domain (optional)
 # echo "your-custom-domain.com" > CNAME
 
-# Push to GitHub Pages (assuming remote is set up)
-echo "📦 Pushing to GitHub Pages..."
-git add .
-git commit -m "Update: Ready for deployment - $(date)"
-git push origin main
-
 # For GitHub Pages, we need to push to gh-pages branch
 echo "📤 Setting up gh-pages branch..."
 git checkout --orphan gh-pages
@@ -29,11 +23,16 @@ git add .
 git commit -m "Deploy to GitHub Pages - $(date)"
 git push -f origin gh-pages
 
-# Switch back to main branch
-git checkout main
+# Switch back to main branch (if it exists, otherwise stay on gh-pages)
+if git rev-parse --verify main > /dev/null 2>&1; then
+    git checkout main
+else
+    # If main doesn't exist, create it from current gh-pages
+    git checkout -b main
+fi
 
 echo "✅ Deployment complete! Your toolkit should be live at:"
-echo "   https://[your-username].github.io/ai-dev-prompt-toolkit/"
+echo "   https://ke1k01.github.io/ai-dev-prompt-toolkit/"
 echo ""
 echo "📝 Next steps:"
 echo "   1. Update the CNAME file if using a custom domain"
